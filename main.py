@@ -41,7 +41,7 @@ print("Is time between sunrise and sunset?",ss_sr)
 url = 'http://corlysis.com:8087/write'#defines urls
 params = {"db": "test", "u": "token", "p": "5f0b565048c9537d33b11efb0e9501ff"}#defines name and password of the db
 payload = f"light light={light_current},moisture={moisture_current}\n"#defines payload
-if ss_sr == True:
+if ss_sr == "True": #since we look at the printed True of ss_sr.py the output doesn´t see it as a Boolean true
     r = requests.post(url, params=params, data=payload)#send light and mois>
     print(r)
 else:
