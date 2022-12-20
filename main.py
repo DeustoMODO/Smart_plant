@@ -59,6 +59,7 @@ light_need = int(needs_plants[1])#gets the "second" element of the needs_plants 
 moisture_current_comparable = moisture_norm(moisture_current)#function that "normalizes" the moisture level to 1 = moist     2 = dry    2 = wet, taken from https://wiki.seeedstudio.com/Grove-Moisture_Sensor/
 
 light_mean = float(subprocess.getoutput(f'python3 light_mean.py'))
+print("Light mean: ",light_mean)
 
 if light_mean < light_need:
     print("Tweeted: Put me in another spot")
