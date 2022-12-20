@@ -18,12 +18,13 @@ In order to run the code makes sure that the following packages work on your ras
 -isAlpha
 -subprocess
 -parse_http_list
+-twython
 
 
 Steps:
 -set up the raspberry and Grove Base Hat
 -insert the Moisture sensor at A2 and Light sensor at A0
 -make sure that the said packages work on your raspi
--set up a Corlysis account
+-set up a Corlysis and Twitter account
 -adjust the code (Corlysis token etc.)
 -run the code
